@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ShadowLab
 
-## Getting Started
+> A multi-layer CSS `box-shadow` builder with live preview and copy-ready output.
 
-First, run the development server:
+**[Live demo](https://su-shadowlab.vercel.app)**
+
+Good shadows are almost never a single `box-shadow` value — they are two or three stacked layers with different blurs and opacities. ShadowLab gives each layer its own collapsible panel of sliders (X, Y, blur, spread, opacity, color, inset), stacks up to five of them, and renders the combined result live on a preview card. The generated CSS is shown as you edit and copies to the clipboard in one click, and ShadowLab also checks the output against Tailwind's built-in shadow scale so you know when a plain utility class would do the job instead.
+
+## Features
+
+- Up to 5 independent shadow layers, each with X/Y offset, blur, spread, opacity, hex color, and an inset toggle
+- 10 named presets — Subtle, Medium, Strong, Floating, Inset, Neon Glow, Layered, Material, Sharp, and Dreamy
+- Randomize button that generates 1-3 layers with random geometry and colors
+- Live preview switchable between dark, light, and checkerboard-grid backgrounds
+- Formatted `box-shadow` output with copy-to-clipboard
+- Tailwind matcher that identifies when the current value is an exact match for `shadow-sm` through `shadow-2xl` or `shadow-inner`
+
+## Stack
+
+- Next.js 16 (App Router) with React 19, TypeScript, and Tailwind CSS v4
+- Entirely client-side — no API routes, no persistence, no external services
+
+## Running locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Part of a series of 90 small web apps. [Browse them all](https://su-slopmachine.vercel.app).
