@@ -2,7 +2,7 @@
 
 > A multi-layer CSS `box-shadow` builder with live preview and copy-ready output.
 
-**[Live demo](https://su-shadowlab.vercel.app)**
+**[Live demo](https://shadowlab-mlx.vercel.app)**
 
 Good shadows are almost never a single `box-shadow` value — they are two or three stacked layers with different blurs and opacities. ShadowLab gives each layer its own collapsible panel of sliders (X, Y, blur, spread, opacity, color, inset), stacks up to five of them, and renders the combined result live on a preview card. The generated CSS is shown as you edit and copies to the clipboard in one click, and ShadowLab also checks the output against Tailwind's built-in shadow scale so you know when a plain utility class would do the job instead.
 
@@ -29,4 +29,4 @@ npm run dev
 
 ---
 
-Part of a series of 90 small web apps. [Browse them all](https://su-slopmachine.vercel.app).
+Part of a series of 90 small web apps. [Browse them all](https://lorenzoylosada.vercel.app).
